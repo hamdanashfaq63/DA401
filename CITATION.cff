@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "foldsym: rule-based fold symmetry detection in 4D-STEM nanodiffraction patterns"
+authors:
+  - family-names: Ashfaq
+    given-names: Hamdan
+version: 1.0.0
+date-released: 2026-10-08
+license: MIT
+repository-code: "https://github.com/hamdanashfaq63/DA401"
+keywords:
+  - 4D-STEM
+  - metallic glass
+  - electron diffraction
+  - materials informatics

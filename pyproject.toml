@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "foldsym"
+version = "1.0.0"
+description = "Rule-based fold symmetry detection in 4D-STEM nanodiffraction patterns of metallic glasses"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Hamdan Ashfaq" }]
+keywords = ["4D-STEM", "electron microscopy", "metallic glass", "diffraction", "computer vision", "materials informatics"]
+dependencies = [
+    "numpy>=1.24",
+    "scikit-image>=0.21",
+    "scikit-learn>=1.3",
+    "matplotlib>=3.7",
+    "tifffile>=2023.1",
+    "tqdm>=4.65",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "nbformat>=5", "nbconvert>=7", "ipykernel"]
+
+[project.scripts]
+foldsym = "foldsym.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
